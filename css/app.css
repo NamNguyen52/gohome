@@ -1,0 +1,203 @@
+@font-face {
+	font-family: GandhiReg;
+	src: url('../fonts/GandhiSans-Regular.otf');
+}
+
+@font-face {
+	font-family: Lakesight;
+	src: url('../fonts/Lakesight_PersonalUseOnly.ttf');
+}
+
+nav {
+	height: 75px;
+	width: 100%;
+	background-color: transparent;
+	position: fixed;
+	padding-top: 20px;
+	padding-left: 50px;
+	z-index: 100;
+	-webkit-transition: background-color 700ms linear;
+    -moz-transition: background-color 700ms linear;
+    -o-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+}
+
+nav.scrolled {
+	background-color: white;
+}
+
+nav > ul {
+	width: 500px;
+	position: relative;
+	margin: -40px 0 0 180px;
+}
+
+nav > ul > li {
+	display: inline-block;
+	color: white;
+	font-style: sans-serif;
+	margin-right: 30px;
+	-webkit-transition: background-color 700ms linear;
+    -moz-transition: background-color 700ms linear;
+    -o-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    color: background-color 700ms linear;
+}
+
+nav.scrolled > ul > li {
+	color: #3ABF70;
+	font-family: GandhiReg;
+}
+
+
+.logo {
+	height: 50px;
+	width: 150px;
+	background-image: url('../img/gm_logo1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.home-page-container {
+	height: 600px;
+	width: 100%;
+}
+
+.home-page-image {
+	position: absolute;
+	height: 650px;
+	width: 100%;
+	background-image: url("../img/gocity4.jpg");
+	background-size: cover;
+}
+
+.home-page-image > header {
+	position: relative;
+	height: 150px;
+	width: 900px;
+	text-align: center;
+	margin: 150px auto 0 auto;
+}
+
+.home-page-image > header > h1 {
+	color: white;
+	font-family: GandhiReg;
+}
+
+.home-page-image > header > h5 {
+	color: white;
+	font-family: GandhiReg;
+}
+
+.call-to-action {
+	width: 500px;
+	position: relative;
+	margin: 100px auto 0px auto;
+}
+
+.call-to-action > p {
+	color: white;
+	font-family: Lakesight;
+	font-size: 70px;
+	text-align: center;
+	color: #3ABF70;
+}
+
+#test-go-moment {
+	position: relative;
+	width: 350px;
+	margin-top: 10px;
+}
+
+#test-go-moment-input {
+	background-color: transparent;
+	color: white;
+	height: 50px;
+	font-size: 20px;
+	border: 3px solid white;
+}
+
+#test-go-moment-submit {
+	background-color: transparent;
+	color: white;
+	height: 50px;
+	font-size: 20px;
+	border: 3px solid white;
+	border-left: none;
+}
+
+.product-summary {
+	height: 300px;
+	width: 100%;
+	background: linear-gradient(180deg, #ffffff, #f2f2f2);
+	border-bottom: 1px solid #ebebed;
+}
+
+.product-section {
+	height: 700px;
+	width: 100%;
+	border-bottom: 1px solid #ebebed;
+	overflow: hidden;
+	background: linear-gradient(180deg, #ffffff, #f2f2f2);
+}
+
+.product-overview {
+	height: 200px;
+	width: 800px;
+	text-align: center;
+	position: relative;
+	margin: 150px auto 0 auto;
+}
+
+.product-overview > header > h2 {
+	font-family: GandhiReg;
+	color: #3ABF70;
+}
+
+.product-overview > p {
+	width: 400px;
+	position: relative;
+	margin: 0 auto;
+	font-family: GandhiReg;
+}
+
+.sell-point-1-container {
+	width: 1000px;
+	height: 600px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.iphone-image {
+	position: relative;
+	height: 650px;
+	width: 400px;
+	margin: 0 0 0 80px;
+	background-image: url('../img/gophone.png');
+	background-size: cover; 
+}
+
+.sell-point-1 {
+	height: 300px;
+	width: 450px;
+	text-align: center;
+	position: relative;
+	margin: -500px 0 0 500px;
+}
+
+.sell-point-1 > header > h2 {
+	font-family: GandhiReg;
+	color: #3ABF70;
+}
+
+.sell-point-1 > p {
+	font-family: GandhiReg;
+	text-align: left;
+}
+
+
+
+
+
+
