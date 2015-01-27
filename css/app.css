@@ -9,7 +9,7 @@
 }
 
 nav {
-	height: 75px;
+	height: 85px;
 	width: 100%;
 	background-color: transparent;
 	position: fixed;
@@ -68,7 +68,7 @@ nav.scrolled > ul > li {
 	position: absolute;
 	height: 650px;
 	width: 100%;
-	background-image: url("../img/gocity4.jpg");
+	background-image: url("../img/pool.jpg");
 	background-size: cover;
 }
 
@@ -98,15 +98,15 @@ nav.scrolled > ul > li {
 
 .call-to-action > p {
 	color: white;
-	font-family: Lakesight;
-	font-size: 70px;
+	font-family: Bitter;
+	font-size: 55px;
 	text-align: center;
 	color: #3ABF70;
 }
 
 #test-go-moment {
 	position: relative;
-	width: 350px;
+	width: 400px;
 	margin-top: 10px;
 }
 
@@ -195,7 +195,12 @@ nav.scrolled > ul > li {
 	font-family: GandhiReg;
 	text-align: left;
 }
-
+.demo-input {
+	padding: 20px;
+	padding-bottom: 0px;
+	background-color: #fff;
+	background-color: rgba(000,000,000,0.4);
+}
 
 
 
