@@ -4,8 +4,18 @@
 }
 
 @font-face {
-	font-family: Lakesight;
-	src: url('../fonts/Lakesight_PersonalUseOnly.ttf');
+	font-family: LintelReg;
+	src: url('../fonts/lintel.ttf');
+}
+
+@font-face {
+	font-family: NexaLight;
+	src: url('../fonts/NexaLight.otf');
+}
+
+@font-face {
+	font-family: NexaBold;
+	src: url('../fonts/NexaBold.otf');
 }
 
 nav {
@@ -25,6 +35,7 @@ nav {
 
 nav.scrolled {
 	background-color: white;
+	box-shadow: 0 5px 5px -5px #333;
 }
 
 nav > ul {
@@ -39,7 +50,7 @@ nav > ul > li {
 	font-style: sans-serif;
 	margin-right: 30px;
 	font-size: 18px;
-	font-family: GandhiReg;
+	font-family: NexaLight;
 	-webkit-transition: background-color 700ms linear;
     -moz-transition: background-color 700ms linear;
     -o-transition: background-color 700ms linear;
@@ -76,39 +87,49 @@ nav.scrolled > ul > li {
 .home-page-image > header {
 	position: relative;
 	height: 150px;
-	width: 900px;
+	width: 600px;
 	text-align: center;
-	margin: 200px auto 0 auto;
+	margin: 150px 0 0 40px;
 }
 
 .home-page-image > header > h1 {
 	color: white;
-	font-family: GandhiReg;
+	font-family: NexaLight;
+	line-height: 45px;
+	font-size: 40px;
 }
 
 .home-page-image > header > h5 {
 	color: white;
-	font-family: GandhiReg;
+	font-family: NexaLight;
 }
 
 .call-to-action {
 	width: 500px;
 	position: relative;
-	margin: 0px auto 0px auto;
+	margin: 10px 0 0 -18px;
 }
 
 .call-to-action > p {
 	color: white;
-	font-family: Bitter;
+	font-family: NexaLight;
 	font-size: 55px;
 	text-align: center;
 	color: #3ABF70;
 }
 
+.test-go-moment-container {
+	height: 200px;
+	width: 470px;
+	margin-left: 105px;
+	margin-top: 40px;
+	background-color: rgba(0,0,0,0.5);
+}
+
 #test-go-moment {
 	position: relative;
 	width: 400px;
-	margin-top: 10px;
+	margin-left: 35px;
 }
 
 #test-go-moment-input {
@@ -130,7 +151,7 @@ nav.scrolled > ul > li {
 }
 
 .product-summary {
-	height: 350px;
+	height: 200px;
 	width: 100%;
 	background: linear-gradient(180deg, #ffffff, #f2f2f2);
 	border-bottom: 1px solid #ebebed;
@@ -149,11 +170,12 @@ nav.scrolled > ul > li {
 	width: 800px;
 	text-align: center;
 	position: relative;
-	margin: 150px auto 0 auto;
+	margin: 120px auto 0 auto;
 }
 
 .product-overview > header > h2 {
-	font-family: GandhiReg;
+	font-family: NexaBold;
+	font-size: 30px;
 	color: #3ABF70;
 }
 
@@ -161,7 +183,8 @@ nav.scrolled > ul > li {
 	width: 400px;
 	position: relative;
 	margin: 0 auto;
-	font-family: GandhiReg;
+	font-family: NexaLight;
+	font-size: 20px;
 }
 
 .sell-point-container {
@@ -177,38 +200,37 @@ nav.scrolled > ul > li {
 }
 
 #sell-point-1 {
-	margin: -400px 0 0 350px;
-	width: 450px;
+	margin: -350px 0 0 300px;
+	width: 400px;
 }
 
 #sell-point-1 > p {
 	text-align: center;
-}
-
-#learn-more-1 {
-	margin: -212px 0 0 373px; 
+	font-size: 18px;
 }
 
 .iphone-image {
-	height: 590px;
-	width: 300px;
-	background-image: url('../img/gophone.png');
+	height: 640px;
+	width: 350px;
+	background-image: url('../img/gophone6.png');
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-top: -50px;
+	margin-left: -50px;
 }
 
 .iphone-gomoment-image {
-	height: 407px;
-	width: 230px;
-	margin: -493px 0 0 35px;
+	height: 402px;
+	width: 225px;
+	margin: -521px 0 0 20px;
 	background-image: url('../img/gochat.png');
 	background-size: contain;
 }
 
 .imac-image {
 	position: relative;
-	height: 550px;
-	width: 650px;
+	height: 450px;
+	width: 550px;
 	margin: 20px 0 0 20px;
 	background-image: url('../img/gomac.png');
 	background-size: contain;
@@ -216,36 +238,38 @@ nav.scrolled > ul > li {
 }
 
 .imac-gomoment-image {
-	height: 345px;
-	width: 600px;
-	margin: -522px 0 0 48px;
+	height: 330px;
+	width: 505px;
+	margin: -428px 0 0 43px;
 	background-image: url('../img/messages.png');
 	background-size: contain;
 }
 
 #imac-gomoment-image-2 {
-	background-image: url('../img/dash.png');
+	background-image: url('../img/dash2.png');
 }
 
 .sell-point {
 	height: 300px;
-	width: 300px;
+	width: 400px;
 	text-align: center;
 	position: relative;
-	margin: -350px 0 0 690px;
+	margin: -350px 0 0 600px;
 }
 
 #sell-point-p-2 {
-	text-align: left;
+	text-align: center;
+	font-size: 18px;
 }
 
 .sell-point > header > h2 {
-	font-family: GandhiReg;
+	font-family: NexaBold;
+	font-size: 30px;
 	color: #3ABF70;
 }
 
 .sell-point > p {
-	font-family: GandhiReg;
+	font-family: NexaLight;
 	text-align: left;
 }
 
@@ -257,56 +281,91 @@ nav.scrolled > ul > li {
 }
 
 .learn-more {
-	height: 50px;
-	width: 150px;
-	margin: -130px 0 0 690px;
+	height: 85px;
+	/*border: 1px solid black;*/
+}
+
+#learn-more-1 {
+	position: relative;
+	margin-top: 15px;
+	padding-top: 25px;
+	background-color: #3ABF70;
+	width: 100%;
+	text-align: center; 
+}
+
+#learn-more-1:hover {
+	background-color: black;
+}
+
+#learn-more-1:hover > a {
+	color: #3ABF70;
 }
 
 #learn-more-2 {
-	margin: -110px 0 0 690px;
+	position: relative;
+	margin-top: -86px;
+	padding-top: 25px;
+	background-color: #3ABF70;
+	width: 100%;
+	text-align: center;
+}
+
+#learn-more-2:hover {
+	background-color: black;
+}
+
+#learn-more-2:hover > a {
+	color: #3ABF70;
 }
 
 .learn-more > a {
-	color: #3ABF70;
-	font-size: 18px;
-	font-family: GandhiReg;
+	color: white;
+	font-size: 25px;
+	font-family: NexaLight;
 }
 
 .clients-section {
-	height: 300px;
+	height: 700px;
 	width: 100%;
 	background: linear-gradient(180deg, #ffffff, #f2f2f2);
 }
 
 .clients-section > header {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 .clients-section > header > h2 {
 	color: #3ABF70;
-	font-family: GandhiReg;
+	font-family: NexaBold;
 }
 
 .logo-container {
-	width: 900px;
-	height: 180px;
-	overflow: scroll;
-	margin: 40px auto 0 auto;
+	width: 1050px;
+	height: 451px;
+	overflow: auto;
+	margin: 60px auto 0 auto;
+	background: rgba(0,0,0,0.2);
+	padding-top: 25px;
 }
 
 .logo-container > ul {
-	width: 1700px;
+	width: 1025px;
+	margin-top: -5px;
 }
 
 .logo-container > ul > li {
 	list-style: none;
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	display: inline-block;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-right: 10px;
+}
+
+#logo-second-row {
+	margin-top: -23px;
 }
 
 .logo-container > ul > li:nth-child(1) {
@@ -329,31 +388,31 @@ nav.scrolled > ul > li {
 	background-image: url('../logos/Wyndham201.png');
 }
 
-.logo-container > ul > li:nth-child(6) {
+#logo-second-row > li:nth-child(1) {
 	background-image: url('../logos/crowne.jpg');
 }
 
-.logo-container > ul > li:nth-child(7) {
-	background-image: url('../logos/hyatt.jpg');
+#logo-second-row > li:nth-child(2) {
+	background-image: url('../logos/hilton.jpg');
 }
 
-.logo-container > ul > li:nth-child(8) {
+#logo-second-row > li:nth-child(3) {
 	background-image: url('../logos/holiday_inn.gif');
 	background-color: white;
 }
 
-.logo-container > ul > li:nth-child(9) {
+#logo-second-row > li:nth-child(4) {
 	background-image: url('../logos/double.gif');
 }
 
-.logo-container > ul > li:nth-child(10) {
+#logo-second-row > li:nth-child(5) {
 	background-image: url('../logos/hampton.jpg');
 }
 
 .product-features-container {
-	height: 400px;
+	height: 450px;
 	width: 900px;
-	margin: 60px auto 0 auto;
+	margin: 40px auto 0 auto;
 	padding-left: 60px;
 }
 
@@ -363,15 +422,35 @@ nav.scrolled > ul > li {
 }
 
 .product-feature-header > h2 {
-	font-family: GandhiReg;
+	font-family: NexaBold;
 	color: #3ABF70;
 }
 
 .product-feature-icons-row1 {
-	height: 60px;
-	width: 850px;
-	margin: 20px 0 0 0;
-	padding-left: 135px;
+	position: relative;
+	width: 650px;
+	margin: 0 auto;
+}
+
+.icon-overlay {
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	color: white;
+	background-color: rgba(0,0,0,0.2);
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.icon-overlay:hover {
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	color: white;
+	background-color: #3ABF70;
 }
 
 #data-icon {
@@ -380,7 +459,6 @@ nav.scrolled > ul > li {
 	background-image: url('../icons/fi-graph-trend.svg');
 	background-size: cover;
 	display: inline-block;
-	margin-right: 180px;
 }
 
 #automated-icon {
@@ -389,7 +467,6 @@ nav.scrolled > ul > li {
 	background-image: url('../icons/fi-widget.svg');
 	background-size: cover;
 	display: inline-block;
-	margin-right: 180px;
 }
 
 #request-icon {
@@ -398,7 +475,6 @@ nav.scrolled > ul > li {
 	background-image: url('../icons/fi-results-demographics.svg');
 	background-size: cover;
 	display: inline-block;
-	margin-right: 180px;
 }
 
 .product-description-row1 {
@@ -407,21 +483,10 @@ nav.scrolled > ul > li {
 	padding-left: 90px;
 }
 
-.product-description-row1 > ul {
-	list-style: none;
-}
-
-.product-description-row1 > ul > li {
-	display: inline-block;
-	font-family: GandhiReg;
-	margin-right: 75px;
-}
-
 .product-feature-icons-row2 {
-	height: 60px;
-	width: 850px;
-	margin: 100px 0 0 0;
-	padding-left: 135px;
+	position: relative;
+	width: 650px;
+	margin: 5px auto 0 auto;
 }
 
 #realtime-icon {
@@ -463,8 +528,17 @@ nav.scrolled > ul > li {
 
 .product-description-row2 > ul > li {
 	display: inline-block;
-	font-family: GandhiReg;
+	font-family: NexaLight;
 	margin-right: 90px;
+}
+
+.icon-container {
+	height: 200px;
+	width: 200px;
+	/*border: 1px solid black;*/
+	display: inline-block;
+	padding-top: 70px;
+	padding-left: 70px;
 }
 
 
