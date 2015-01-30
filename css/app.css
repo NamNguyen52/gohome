@@ -282,7 +282,6 @@ nav.scrolled > ul > li {
 
 .learn-more {
 	height: 85px;
-	/*border: 1px solid black;*/
 }
 
 #learn-more-1 {
@@ -291,7 +290,12 @@ nav.scrolled > ul > li {
 	padding-top: 25px;
 	background-color: #3ABF70;
 	width: 100%;
-	text-align: center; 
+	text-align: center;
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear; 
 }
 
 #learn-more-1:hover {
@@ -309,6 +313,11 @@ nav.scrolled > ul > li {
 	background-color: #3ABF70;
 	width: 100%;
 	text-align: center;
+	-webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
 }
 
 #learn-more-2:hover {
@@ -323,6 +332,11 @@ nav.scrolled > ul > li {
 	color: white;
 	font-size: 25px;
 	font-family: NexaLight;
+	-webkit-transition: color 200ms linear;
+    -moz-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    -ms-transition: color 200ms linear;
+    transition: color 200ms linear;
 }
 
 .clients-section {
@@ -535,7 +549,6 @@ nav.scrolled > ul > li {
 .icon-container {
 	height: 200px;
 	width: 200px;
-	/*border: 1px solid black;*/
 	display: inline-block;
 	padding-top: 70px;
 	padding-left: 70px;

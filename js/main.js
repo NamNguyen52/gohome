@@ -6,4 +6,6 @@
     } else {
       $('nav').removeClass("scrolled");
     }
+
 });
+
