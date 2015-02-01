@@ -200,8 +200,9 @@ nav.scrolled > ul > li {
 }
 
 #sell-point-1 {
-	margin: -350px 0 0 300px;
+	margin: -300px 0 0 300px;
 	width: 400px;
+	opacity: 0;
 }
 
 #sell-point-1 > p {
@@ -216,33 +217,38 @@ nav.scrolled > ul > li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -50px;
-	margin-left: -50px;
+	margin-left: -100px;
+	opacity: 0;
 }
 
 .iphone-gomoment-image {
 	height: 402px;
 	width: 225px;
-	margin: -521px 0 0 20px;
+	margin: -521px 0 0 -30px;
 	background-image: url('../img/gochat.png');
 	background-size: contain;
+	opacity: 0;
 }
 
 .imac-image {
 	position: relative;
 	height: 450px;
 	width: 550px;
-	margin: 20px 0 0 20px;
+	margin: 20px 0 0 -30px;
 	background-image: url('../img/gomac.png');
 	background-size: contain;
-	background-repeat: no-repeat; 
+	background-repeat: no-repeat;
+	opacity: 0; 
 }
 
 .imac-gomoment-image {
-	height: 330px;
+	height: 290px;
 	width: 505px;
-	margin: -428px 0 0 43px;
+	margin: -428px 0 0 -7px;
 	background-image: url('../img/messages.png');
 	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0;
 }
 
 #imac-gomoment-image-2 {
@@ -254,7 +260,8 @@ nav.scrolled > ul > li {
 	width: 400px;
 	text-align: center;
 	position: relative;
-	margin: -350px 0 0 600px;
+	margin: -200px 0 0 600px;
+	opacity: 0;
 }
 
 #sell-point-p-2 {
@@ -427,7 +434,13 @@ nav.scrolled > ul > li {
 	height: 450px;
 	width: 900px;
 	margin: 40px auto 0 auto;
-	padding-left: 60px;
+	/*border: 1px solid black;*/
+}
+
+.small-block-grid-3 {
+	/*border: 1px solid black;*/
+	width: 665px;
+	margin: 0 auto;
 }
 
 .product-feature-header {
@@ -440,18 +453,12 @@ nav.scrolled > ul > li {
 	color: #3ABF70;
 }
 
-.product-feature-icons-row1 {
-	position: relative;
-	width: 650px;
-	margin: 0 auto;
-}
-
-.icon-overlay {
+.feature-container {
 	height: 200px;
 	width: 200px;
-	display: inline-block;
-	color: white;
-	background-color: rgba(0,0,0,0.2);
+	/*border: 1px solid black;*/
+	overflow: hidden;
+	background-color: #D3D3D3;
 	-webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
@@ -459,100 +466,70 @@ nav.scrolled > ul > li {
     transition: background-color 200ms linear;
 }
 
-.icon-overlay:hover {
-	height: 200px;
-	width: 200px;
-	display: inline-block;
-	color: white;
+.feature-container:hover {
 	background-color: #3ABF70;
 }
 
-#data-icon {
+.feature-description {
 	height: 50px;
-	width: 50px;
-	background-image: url('../icons/fi-graph-trend.svg');
-	background-size: cover;
-	display: inline-block;
-}
-
-#automated-icon {
-	height: 50px;
-	width: 50px;
-	background-image: url('../icons/fi-widget.svg');
-	background-size: cover;
-	display: inline-block;
-}
-
-#request-icon {
-	height: 50px;
-	width: 50px;
-	background-image: url('../icons/fi-results-demographics.svg');
-	background-size: cover;
-	display: inline-block;
-}
-
-.product-description-row1 {
-	height: 50px;
-	width: 850px;
-	padding-left: 90px;
-}
-
-.product-feature-icons-row2 {
-	position: relative;
-	width: 650px;
-	margin: 5px auto 0 auto;
-}
-
-#realtime-icon {
-	height: 50px;
-	width: 50px;
-	background-image: url('../icons/fi-comments.svg');
-	background-size: cover;
-	display: inline-block;
-	margin-right: 180px;
-}
-
-#dashboard-icon {
-	height: 50px;
-	width: 50px;
-	background-image: url('../icons/fi-graph-bar.svg');
-	background-size: cover;
-	display: inline-block;
-	margin-right: 180px;
-}
-
-#reports-icon {
-	height: 50px;
-	width: 50px;
-	background-image: url('../icons/fi-page-export.svg');
-	background-size: cover;
-	display: inline-block;
-	margin-right: 180px;
-}
-
-.product-description-row2 {
-	height: 50px;
-	width: 850px;
-	padding-left: 80px;
-}
-
-.product-description-row2 > ul {
-	list-style: none;
-}
-
-.product-description-row2 > ul > li {
-	display: inline-block;
+	width: 100%;
+	background-color: black;
+	margin-top: -50px;
+	text-align: center;
+	color: white;
 	font-family: NexaLight;
-	margin-right: 90px;
+	padding-top: 13px;
+	-webkit-transition: margin-top 200ms linear;
+    -moz-transition: margin-top 200ms linear;
+    -o-transition: margin-top 200ms linear;
+    -ms-transition: margin-top 200ms linear;
+    transition: margin-top 200ms linear;
 }
 
-.icon-container {
-	height: 200px;
-	width: 200px;
-	display: inline-block;
-	padding-top: 70px;
-	padding-left: 70px;
+.feature-description > p {
+	font-size: 15px;
 }
+
+.feature-description.hovered {
+	margin-top: 0px;
+}
+
+.feature-icon {
+	height: 50px;
+	width: 50px;
+	/*border: 1px solid black;*/
+	margin-top: 80px;
+	margin-left: 75px;
+	background-size: contain;
+}
+
+#data {
+	background-image: url('../icons/fi-graph-trend.svg');
+}
+
+#requests {
+	background-image: url('../icons/fi-results-demographics.svg');
+}
+
+#realtime {
+	background-image: url('../icons/fi-widget.svg'); 
+}
+
+#dashboard {
+	background-image: url('../icons/fi-graph-bar.svg');
+}
+
+#auto {
+	background-image: url('../icons/fi-check.svg');
+}
+
+#reports {
+	background-image: url('../icons/fi-page-export.svg');
+}
+
+
+
+
 
 
 
