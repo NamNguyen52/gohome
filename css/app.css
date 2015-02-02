@@ -121,7 +121,7 @@ nav.scrolled > ul > li {
 .call-to-action > p {
 	color: white;
 	font-family: NexaLight;
-	font-size: 40px;
+	font-size: 30px;
 	text-align: center;
 	color: #3ABF70;
 }
@@ -154,10 +154,12 @@ nav.scrolled > ul > li {
 	background-color: transparent;
 	color: white;
 	height: 50px;
-	font-size: 18px;
+	font-size: 16px;
 	border: 3px solid #3ABF70;
 	background-color: #3ABF70;
 	border-left: none;
+	font-family: NexaLight;
+	padding-top: 5px;
 }
 
 .product-summary {
@@ -501,7 +503,7 @@ nav.scrolled > ul > li {
 }
 
 .feature-description > p {
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .feature-description.hovered {
