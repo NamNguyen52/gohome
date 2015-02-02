@@ -413,6 +413,12 @@ nav.scrolled > ul > li {
 	background-image: url('../logos/sheraton.png');
 }
 
+#sheraton-size {
+	background-size: 150px 150px;
+	background-position: 50% 50%;
+	background-color: white;
+}
+
 .logo-container > ul > li:nth-child(3) {
 	background-image: url('../logos/fairfield.jpg');
 }
@@ -421,12 +427,30 @@ nav.scrolled > ul > li {
 	background-image: url('../logos/best_western.jpg');
 }
 
+#best-west-size {
+	background-size: 130px 130px;
+	background-position: 50% 50%;
+	background-color: white;
+}
+
 .logo-container > ul > li:nth-child(5) {
 	background-image: url('../logos/Wyndham201.png');
 }
 
+#wyndham-size {
+	background-size: 160px 160px;
+	background-position: 50% 50%;
+	background-color: white;
+}
+
 #logo-second-row > li:nth-child(1) {
 	background-image: url('../logos/crowne.jpg');
+}
+
+#crowne-size {
+	background-size: 165px 165px;
+	background-position: 50% 50%;
+	background-color: white;
 }
 
 #logo-second-row > li:nth-child(2) {
@@ -434,7 +458,13 @@ nav.scrolled > ul > li {
 }
 
 #logo-second-row > li:nth-child(3) {
-	background-image: url('../logos/holiday_inn.gif');
+	background-image: url('../logos/embassy.jpg');
+	background-color: white;
+}
+
+#embassy-size {
+	background-size: 130px 130px;
+	background-position: 50% 50%;
 	background-color: white;
 }
 
@@ -442,8 +472,20 @@ nav.scrolled > ul > li {
 	background-image: url('../logos/double.gif');
 }
 
+#double-tree-size {
+	background-size: 160px 160px;
+	background-position: 50% 50%;
+	background-color: white;
+}
+
 #logo-second-row > li:nth-child(5) {
 	background-image: url('../logos/hampton.jpg');
+}
+
+#hampton-size {
+	background-size: 160px 160px;
+	background-position: 50% 50%;
+	background-color: white;
 }
 
 .product-features-container {
