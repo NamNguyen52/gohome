@@ -80,8 +80,10 @@ nav.scrolled > ul > li {
 	position: absolute;
 	height: 650px;
 	width: 100%;
-	background-image: url("../img/bell.jpg");
+	background-image: url("../img/gohomephoto.jpg");
 	background-size: cover;
+	background-position: 60% 60%;
+	background-repeat: no-repeat;
 }
 
 .home-page-image > header {
@@ -90,6 +92,11 @@ nav.scrolled > ul > li {
 	width: 600px;
 	text-align: center;
 	margin: 150px 0 0 40px;
+}
+
+#hero-header {
+	opacity: 0;
+	margin-top: 100px;
 }
 
 .home-page-image > header > h1 {
@@ -108,28 +115,31 @@ nav.scrolled > ul > li {
 	width: 500px;
 	position: relative;
 	margin: 10px 0 0 -18px;
+	padding-top: 10px;
 }
 
 .call-to-action > p {
 	color: white;
 	font-family: NexaLight;
-	font-size: 55px;
+	font-size: 40px;
 	text-align: center;
 	color: #3ABF70;
 }
 
 .test-go-moment-container {
-	height: 200px;
+	height: 180px;
 	width: 470px;
 	margin-left: 105px;
-	margin-top: 40px;
+	margin-top: 15px;
 	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
 }
 
 #test-go-moment {
 	position: relative;
 	width: 400px;
 	margin-left: 35px;
+	margin-top: 20px;
 }
 
 #test-go-moment-input {
@@ -260,8 +270,12 @@ nav.scrolled > ul > li {
 	width: 400px;
 	text-align: center;
 	position: relative;
-	margin: -200px 0 0 600px;
+	margin: -250px 0 0 600px;
+}
+
+#sell-point-2 {
 	opacity: 0;
+	margin-top: -200px;
 }
 
 #sell-point-p-2 {

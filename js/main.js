@@ -9,6 +9,15 @@ $(document).scroll(function(){
 
 });
 
+$(document).ready(function(){
+
+	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 700);
+
+	setTimeout(function() {
+      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 500);
+	}, 1700);
+});
+
 $(".feature-container").hover(function(){
 
 	$(this).children("div.feature-description").toggleClass("hovered");
@@ -25,17 +34,10 @@ $(window).scroll(function(){
 
 $(window).scroll(function(){
 
-	if ($(this).scrollTop() > 1250) {
+	if ($(this).scrollTop() > 1270) {
 		$('.imac-image').animate({'opacity':'1','margin-left':'20px'}, 800);
 		$('.imac-gomoment-image').animate({'opacity':'1','margin-left':'43px'}, 800);
-		$('.sell-point').animate({'opacity':'1', 'margin-top':'-250px'}, 800);
+		$('#sell-point-2').animate({'opacity':'1', 'margin-top':'-250px'}, 800);
 	}
 });
-
-// $(window).scroll(function(){
-
-// 	if($(this).scrollTop > 1900) {
-// 		$('.logo-container ul li').animate({'width':'200px', 'height':'200px'}, 500);
-// 	}
-// });
 
