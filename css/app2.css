@@ -1,21 +1,15 @@
+@import url("//hello.myfonts.net/count/2d3f2a");
+
+  
 @font-face {
-	font-family: GandhiReg;
-	src: url('../fonts/GandhiSans-Regular.otf');
+	font-family: 'Novecento';
+	src: url('../fonts/2D3F2A_0_0.eot');
+	src: url('../fonts/2D3F2A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2D3F2A_0_0.woff2') format('woff2'),url('../fonts/2D3F2A_0_0.woff') format('woff'),url('../fonts/2D3F2A_0_0.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: LintelReg;
-	src: url('../fonts/lintel.ttf');
-}
-
-@font-face {
-	font-family: NexaLight;
-	src: url('../fonts/NexaLight.otf');
-}
-
-@font-face {
-	font-family: NexaBold;
-	src: url('../fonts/NexaBold.otf');
+	font-family: 'Museo';
+	src: url('../fonts/Museo300-Regular.otf');
 }
 
 nav {
@@ -50,7 +44,7 @@ nav > ul > li {
 	font-style: sans-serif;
 	margin-right: 30px;
 	font-size: 18px;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	-webkit-transition: background-color 700ms linear;
     -moz-transition: background-color 700ms linear;
     -o-transition: background-color 700ms linear;
@@ -101,14 +95,14 @@ nav.scrolled > ul > li {
 
 .home-page-image > header > h1 {
 	color: white;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	line-height: 45px;
 	font-size: 40px;
 }
 
 .home-page-image > header > h5 {
 	color: white;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 }
 
 .call-to-action {
@@ -120,7 +114,7 @@ nav.scrolled > ul > li {
 
 .call-to-action > p {
 	color: white;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	font-size: 30px;
 	text-align: center;
 	color: #3ABF70;
@@ -157,7 +151,7 @@ nav.scrolled > ul > li {
 	border: 3px solid #3ABF70;
 	background-color: #3ABF70;
 	border-left: none;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	padding-top: 5px;
 }
 
@@ -185,7 +179,7 @@ nav.scrolled > ul > li {
 }
 
 .product-overview > header > h2 {
-	font-family: NexaBold;
+	font-family: Novecento;
 	font-size: 30px;
 	color: #3ABF70;
 }
@@ -194,7 +188,7 @@ nav.scrolled > ul > li {
 	width: 400px;
 	position: relative;
 	margin: 0 auto;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	font-size: 20px;
 }
 
@@ -285,13 +279,13 @@ nav.scrolled > ul > li {
 }
 
 .sell-point > header > h2 {
-	font-family: NexaBold;
+	font-family: Novecento;
 	font-size: 30px;
 	color: #3ABF70;
 }
 
 .sell-point > p {
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	text-align: left;
 }
 
@@ -353,7 +347,7 @@ nav.scrolled > ul > li {
 .learn-more > a {
 	color: white;
 	font-size: 25px;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	-webkit-transition: color 200ms linear;
     -moz-transition: color 200ms linear;
     -o-transition: color 200ms linear;
@@ -374,7 +368,7 @@ nav.scrolled > ul > li {
 
 .clients-section > header > h2 {
 	color: #3ABF70;
-	font-family: NexaBold;
+	font-family: Novecento;
 }
 
 .logo-container {
@@ -506,7 +500,7 @@ nav.scrolled > ul > li {
 }
 
 .product-feature-header > h2 {
-	font-family: NexaBold;
+	font-family: Novecento;
 	color: #3ABF70;
 }
 
@@ -534,7 +528,7 @@ nav.scrolled > ul > li {
 	margin-top: -50px;
 	text-align: center;
 	color: white;
-	font-family: NexaLight;
+	font-family: Source Sans Pro;
 	padding-top: 13px;
 	-webkit-transition: margin-top 200ms linear;
     -moz-transition: margin-top 200ms linear;

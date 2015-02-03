@@ -41,3 +41,23 @@ $(window).scroll(function(){
 	}
 });
 
+function testGo() {
+	var guestNumber = document.getElementById('test-go-moment-input').value;
+	var hotelId = 100;
+	$.ajax({
+		method: 'POST',
+		url: 'http://rev1.gomoment.com/app/guests',
+		data: JSON.stringify({
+			'mobile_number': guestNumber,
+			'hotel_id':'100',
+			'guest_name':'test guest'
+		}),
+		success: function() {
+			console.log('success');
+		},
+		failure: function() {
+			console.log('fail');
+		}
+	});
+}
+
