@@ -179,7 +179,7 @@ nav.scrolled > ul > li {
 }
 
 .product-overview > header > h2 {
-	font-family: Novecento;
+	font-family: Source Sans Pro;
 	font-size: 30px;
 	color: #3ABF70;
 }
@@ -279,7 +279,7 @@ nav.scrolled > ul > li {
 }
 
 .sell-point > header > h2 {
-	font-family: Novecento;
+	font-family: Source Sans Pro;
 	font-size: 30px;
 	color: #3ABF70;
 }
@@ -355,6 +355,22 @@ nav.scrolled > ul > li {
     transition: color 200ms linear;
 }
 
+.reveal-modal {
+	width: 500px;
+	height: 200px;
+}
+
+.demo-input {
+	border: 5px solid red;
+}
+
+#modal2-submit {
+	width: 437px;
+	height: 50px;
+	font-size: 15px;
+	margin: 125px 9px 0 0;
+}
+
 .clients-section {
 	height: 700px;
 	width: 100%;
@@ -368,7 +384,7 @@ nav.scrolled > ul > li {
 
 .clients-section > header > h2 {
 	color: #3ABF70;
-	font-family: Novecento;
+	font-family: Source Sans Pro;
 }
 
 .logo-container {
@@ -392,6 +408,16 @@ nav.scrolled > ul > li {
 	display: inline-block;
 	background-size: contain;
 	background-repeat: no-repeat;
+	-webkit-transition: all 100ms linear;
+    -moz-transition: all 100ms linear;
+    -o-transition: all 100ms linear;
+    -ms-transition: all 100ms linear;
+    transition: all 100ms linear;
+}
+
+.logo-container > ul > li:hover {
+	border-right: 5px solid #3ABF70;
+	border-bottom: 5px solid #3ABF70;
 }
 
 #logo-second-row {
@@ -400,6 +426,12 @@ nav.scrolled > ul > li {
 
 .logo-container > ul > li:nth-child(1) {
 	background-image: url('../logos/line.jpeg');
+}
+
+#line-size {
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: white;
 }
 
 .logo-container > ul > li:nth-child(2) {
@@ -414,6 +446,12 @@ nav.scrolled > ul > li {
 
 .logo-container > ul > li:nth-child(3) {
 	background-image: url('../logos/fairfield.jpg');
+}
+
+#fairfield-size {
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: white;
 }
 
 .logo-container > ul > li:nth-child(4) {
@@ -448,6 +486,12 @@ nav.scrolled > ul > li {
 
 #logo-second-row > li:nth-child(2) {
 	background-image: url('../logos/hilton.jpg');
+}
+
+#hilton-size {
+	background-size: 200px 200px;
+	background-position: 50% 50%;
+	background-color: white;
 }
 
 #logo-second-row > li:nth-child(3) {
@@ -500,7 +544,7 @@ nav.scrolled > ul > li {
 }
 
 .product-feature-header > h2 {
-	font-family: Novecento;
+	font-family: Source Sans Pro;
 	color: #3ABF70;
 }
 
@@ -525,31 +569,32 @@ nav.scrolled > ul > li {
 	height: 50px;
 	width: 100%;
 	background-color: black;
-	margin-top: -50px;
+	/*margin-top: 0px;*/
 	text-align: center;
 	color: white;
 	font-family: Source Sans Pro;
 	padding-top: 13px;
-	-webkit-transition: margin-top 200ms linear;
-    -moz-transition: margin-top 200ms linear;
-    -o-transition: margin-top 200ms linear;
-    -ms-transition: margin-top 200ms linear;
-    transition: margin-top 200ms linear;
-}
-
-.feature-description > p {
-	font-size: 14px;
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
 }
 
 .feature-description.hovered {
-	margin-top: 0px;
+	height: 65px;
+	/*padding-top: 28px;*/
+}
+
+.feature-description > p {
+	font-size: 15px;
 }
 
 .feature-icon {
 	height: 50px;
 	width: 50px;
 	/*border: 1px solid black;*/
-	margin-top: 80px;
+	margin-top: 60px;
 	margin-left: 75px;
 	background-size: contain;
 }

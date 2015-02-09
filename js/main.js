@@ -11,11 +11,11 @@ $(document).scroll(function(){
 
 $(document).ready(function(){
 
-	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 700);
+	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 900, 'easeOutExpo');
 
 	setTimeout(function() {
-      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 500);
-	}, 1700);
+      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 800, 'easeOutExpo');
+	}, 1300);
 });
 
 $(".feature-container").hover(function(){
@@ -25,16 +25,27 @@ $(".feature-container").hover(function(){
 
 $(window).scroll(function(){
 
-	if ($(this).scrollTop() > 600) {
-		$('.iphone-image').animate({'opacity':'1', 'margin-left':'-50px'}, 500);
-		$('.iphone-gomoment-image').animate({'opacity':'1', 'margin-left':'20px'}, 500);
-		$('#sell-point-1').animate({'opacity':'1','margin-top':'-350px'}, 500);
+	var iphoneImageHeight = $('.iphone-image').height();
+	var windowHeight = $(window).height();
+	var heightThreshhold = 350;
+	var heightDiff = (windowHeight - iphoneImageHeight) + heightThreshhold;
+
+	if ($(window).scrollTop() >= heightDiff) {
+		$('.iphone-image').animate({'opacity':'1', 'margin-left':'-50px'},600, 'easeOutExpo');
+		$('.iphone-gomoment-image').animate({'opacity':'1', 'margin-left':'20px'},600, 'easeOutExpo');
+		$('#sell-point-1').animate({'opacity':'1','margin-top':'-350px'},600, 'easeOutExpo');
 	}
+
 });
 
 $(window).scroll(function(){
 
-	if ($(this).scrollTop() > 1270) {
+	var imacImageHeight = $('.imac-image').height();
+	var windowHeight = $(window).height();
+	var heightThreshhold = 850;
+	var heightDiff = (windowHeight - imacImageHeight) + heightThreshhold;
+
+	if ($(window).scrollTop() >= heightDiff) {
 		$('.imac-image').animate({'opacity':'1','margin-left':'20px'}, 800);
 		$('.imac-gomoment-image').animate({'opacity':'1','margin-left':'43px'}, 800);
 		$('#sell-point-2').animate({'opacity':'1', 'margin-top':'-250px'}, 800);

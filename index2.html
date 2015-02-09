@@ -101,23 +101,25 @@
         <a href="#" data-reveal-id="myModal2">Request A Demo</a>
     </div>
     <div id="myModal2" class="reveal-modal" data-reveal>
-      <form>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Name
-              <input type="text" placeholder="First and Last Name" />
-            </label>
+      <form id="form2">
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span class="prefix">Name</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" placeholder="Enter your full name..." class="demo-input">
           </div>
         </div>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Email
-              <input type="text" placeholder="Email" />
-            </label>
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span class="prefix">Email</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" placeholder="Enter your email...">
           </div>
         </div>
+        <a href="#" class="button expand close-reveal-modal" id="modal2-submit">Submit</a>
       </form>
-      <a class="close-reveal-modal">&#215;</a>
     </div>
   </div>
   <div class="clients-section">
@@ -126,15 +128,15 @@
     </header>
     <div class="logo-container">
       <ul>
-        <li></li>
+        <li id="line-size"></li>
         <li id="sheraton-size"></li>
-        <li></li>
+        <li id="fairfield-size"></li>
         <li id="best-west-size"></li>
         <li id="wyndham-size"></li>
       </ul>
       <ul id="logo-second-row">
         <li id="crowne-size"></li>
-        <li></li>
+        <li id="hilton-size"></li>
         <li id="embassy-size"></li>
         <li id="double-tree-size"></li>
         <li id="hampton-size"></li>
@@ -204,10 +206,10 @@
   <footer>
     
   </footer>
-    
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/easing.js"></script>
     <script>
       $(document).foundation();
     </script>
