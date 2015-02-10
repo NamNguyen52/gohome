@@ -67,23 +67,25 @@
       <a href="#" data-reveal-id="myModal1">Request A Demo</a>
     </div>
     <div id="myModal1" class="reveal-modal" data-reveal>
-      <form>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Name
-              <input type="text" placeholder="First and Last Name" />
-            </label>
+      <form id="form2">
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span id="modal-label" class="prefix">Name</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" id="modal-input" placeholder="Enter your full name...">
           </div>
         </div>
-        <div class="row">
-          <div class="medium-12 columns">
-            <label>Email
-              <input type="text" placeholder="Email" />
-            </label>
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span id="modal-label" class="prefix">Email</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" id="modal-input" placeholder="Enter your email...">
           </div>
         </div>
+        <a href="#" class="button expand close-reveal-modal" id="modal-submit">Submit</a>
       </form>
-      <a class="close-reveal-modal">&#215;</a>
     </div>
   </div>
   <div class="product-section">
@@ -104,21 +106,21 @@
       <form id="form2">
         <div class="row collapse">
           <div class="small-3 large-2 columns">
-            <span class="prefix">Name</span>
+            <span id="modal-label" class="prefix">Name</span>
           </div>
           <div class="small-9 large-10 columns">
-            <input type="text" placeholder="Enter your full name..." class="demo-input">
+            <input type="text" id="modal-input" placeholder="Enter your full name...">
           </div>
         </div>
         <div class="row collapse">
           <div class="small-3 large-2 columns">
-            <span class="prefix">Email</span>
+            <span id="modal-label" class="prefix">Email</span>
           </div>
           <div class="small-9 large-10 columns">
-            <input type="text" placeholder="Enter your email...">
+            <input type="text" id="modal-input" placeholder="Enter your email...">
           </div>
         </div>
-        <a href="#" class="button expand close-reveal-modal" id="modal2-submit">Submit</a>
+        <a href="#" class="button expand close-reveal-modal" id="modal-submit">Submit</a>
       </form>
     </div>
   </div>

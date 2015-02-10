@@ -11,10 +11,10 @@ $(document).scroll(function(){
 
 $(document).ready(function(){
 
-	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 900, 'easeOutExpo');
+	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 700, 'easeOutExpo');
 
 	setTimeout(function() {
-      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 800, 'easeOutExpo');
+      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 700, 'easeOutExpo');
 	}, 1300);
 });
 
@@ -46,9 +46,9 @@ $(window).scroll(function(){
 	var heightDiff = (windowHeight - imacImageHeight) + heightThreshhold;
 
 	if ($(window).scrollTop() >= heightDiff) {
-		$('.imac-image').animate({'opacity':'1','margin-left':'20px'}, 800);
-		$('.imac-gomoment-image').animate({'opacity':'1','margin-left':'43px'}, 800);
-		$('#sell-point-2').animate({'opacity':'1', 'margin-top':'-250px'}, 800);
+		$('.imac-image').animate({'opacity':'1','margin-left':'20px'}, 600, 'easeOutExpo');
+		$('.imac-gomoment-image').animate({'opacity':'1','margin-left':'43px'}, 600, 'easeOutExpo');
+		$('#sell-point-2').animate({'opacity':'1', 'margin-top':'-250px'}, 600, 'easeOutExpo');
 	}
 });
 

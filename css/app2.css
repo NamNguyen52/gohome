@@ -357,18 +357,43 @@ nav.scrolled > ul > li {
 
 .reveal-modal {
 	width: 500px;
-	height: 200px;
+	height: 225px;
 }
 
-.demo-input {
-	border: 5px solid red;
+#modal-input {
+	border: 2px solid #3ABF70;
+	border-left: none;
+	height: 40px;
 }
 
-#modal2-submit {
+#modal-label {
+	border: 2px solid #3ABF70;
+	border-right: none;
+	color: white;
+	background: #3ABF70;
+	font-family: Source Sans Pro;
+	font-size: 18px;
+	height: 40px;
+}
+
+#modal-submit {
 	width: 437px;
 	height: 50px;
-	font-size: 15px;
-	margin: 125px 9px 0 0;
+	font-size: 20px;
+	margin: 132px 9px 0 0;
+	background: #3ABF70;
+	color: white;
+	font-family: Source Sans Pro;
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+#modal-submit:hover {
+	background: black;
+	color: #3ABF70;
 }
 
 .clients-section {
@@ -569,9 +594,8 @@ nav.scrolled > ul > li {
 	height: 50px;
 	width: 100%;
 	background-color: black;
-	/*margin-top: 0px;*/
 	text-align: center;
-	color: white;
+	color: #3ABF70;
 	font-family: Source Sans Pro;
 	padding-top: 13px;
 	-webkit-transition: all 200ms linear;
@@ -583,7 +607,7 @@ nav.scrolled > ul > li {
 
 .feature-description.hovered {
 	height: 65px;
-	/*padding-top: 28px;*/
+	color: white;
 }
 
 .feature-description > p {
