@@ -52,7 +52,15 @@ nav > ul > li {
     color: background-color 700ms linear;
 }
 
-nav.scrolled > ul > li {
+nav > ul > li > a {
+	color: white;
+}
+
+nav > ul > li > a:hover {
+	color: black;
+}
+
+nav.scrolled > ul > li > a {
 	color: #3ABF70;
 }
 
@@ -74,7 +82,7 @@ nav.scrolled > ul > li {
 	position: absolute;
 	height: 650px;
 	width: 100%;
-	background-image: url("../img/gohomephoto.jpg");
+	background-image: url("../img/gohomephoto2.jpg");
 	background-size: cover;
 	background-position: 60% 60%;
 	background-repeat: no-repeat;
@@ -197,6 +205,19 @@ nav.scrolled > ul > li {
 	height: 600px;
 	position: relative;
 	margin: 100px auto 0 auto;
+	-webkit-transition: all 3000ms linear;
+    -moz-transition: all 3000ms linear;
+    -o-transition: all 3000ms linear;
+    -ms-transition: all 3000ms linear;
+    transition: all 3000ms linear;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.visible {
+	opacity: 1;
 }
 
 #sell-container {
@@ -205,9 +226,9 @@ nav.scrolled > ul > li {
 }
 
 #sell-point-1 {
-	margin: -300px 0 0 300px;
+	margin: -350px 0 0 300px;
 	width: 400px;
-	opacity: 0;
+	opacity: 1;
 }
 
 #sell-point-1 > p {
@@ -222,39 +243,115 @@ nav.scrolled > ul > li {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: -50px;
-	margin-left: -100px;
-	opacity: 0;
+	margin-left: -50px;
+	opacity: 1;
 }
 
 .iphone-gomoment-image {
 	height: 402px;
 	width: 225px;
-	margin: -521px 0 0 -30px;
+	margin: -521px 0 0 20px;
 	background-image: url('../img/gochat.png');
 	background-size: contain;
+	opacity: 1;
+}
+
+.iphone-gomoment-demo-overlay {
+	height: 402px;
+	width: 225px;
+	margin: -402px 0 0 20px;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear; 
+}
+
+.iphone-gomoment-demo-overlay > p {
+	color: white;
+	font-family: Source Sans Pro;
+	font-size: 25px;
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
 	opacity: 0;
+	padding-top: 150px;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.iphone-gomoment-demo-overlay > p:hover {
+	opacity: 1;
+} 
+
+.iphone-gomoment-demo-overlay:hover {
+	background-color: rgba(0,0,0,0.7);
 }
 
 .imac-image {
 	position: relative;
 	height: 450px;
 	width: 550px;
-	margin: 20px 0 0 -30px;
+	margin: 20px 0 0 20px;
 	background-image: url('../img/gomac.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	opacity: 0; 
+	opacity: 1; 
 }
 
 .imac-gomoment-image {
 	height: 290px;
 	width: 505px;
-	margin: -428px 0 0 -7px;
+	margin: -428px 0 0 43px;
 	background-image: url('../img/messages.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	opacity: 0;
+	opacity: 1;
 }
+
+.imac-gomoment-demo-overlay {
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	height: 290px;
+	width: 505px;
+	margin: -345px 0 0 43px;
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear; 
+}
+
+.imac-gomoment-demo-overlay > p {
+	text-align: center;
+	font-size: 25px;
+	font-family: Source Sans Pro;
+	color: white;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	padding-top: 130px;
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.imac-gomoment-demo-overlay > p:hover {
+	opacity: 1;
+}
+
+.imac-gomoment-demo-overlay:hover {
+	background-color: rgba(0,0,0,0.7);
+}
+
 
 #imac-gomoment-image-2 {
 	background-image: url('../img/dash2.png');
@@ -269,8 +366,8 @@ nav.scrolled > ul > li {
 }
 
 #sell-point-2 {
-	opacity: 0;
-	margin-top: -200px;
+	opacity: 1;
+	margin-top: -250px;
 }
 
 #sell-point-p-2 {
@@ -355,32 +452,82 @@ nav.scrolled > ul > li {
     transition: color 200ms linear;
 }
 
-.reveal-modal {
+#myModal2 {
 	width: 500px;
-	height: 225px;
+	height: 525px;
+	background: linear-gradient(180deg, #ffffff, #f2f2f2);
 }
 
-#modal-input {
+#myModal1 {
+	width: 500px;
+	height: 525px;
+	background: linear-gradient(180deg, #ffffff, #f2f2f2);
+}
+
+.close-reveal-modal {
+	margin-top: -10px;
+	margin-right: -10px;
+}
+
+.modal-selling-points {
+	margin-bottom: 80px;
+}
+
+.modal-selling-points > h1 {
+	font-family: Source Sans Pro;
+	font-size: 40px;
+	text-align: center;
+	color: #3ABF70;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.modal-selling-points > ul > li {
+	font-family: Source Sans Pro;
+	font-size: 20px;
+}
+
+#name1 {
 	border: 2px solid #3ABF70;
 	border-left: none;
-	height: 40px;
+	height: 50px;
+}
+
+#email1 {
+	border: 2px solid #3ABF70;
+	border-left: none;
+	height: 50px;
+}
+
+#name2 {
+	border: 2px solid #3ABF70;
+	border-left: none;
+	height: 50px;
+}
+
+#email2 {
+	border: 2px solid #3ABF70;
+	border-left: none;
+	height: 50px;
 }
 
 #modal-label {
 	border: 2px solid #3ABF70;
+	padding-top: 3px;
 	border-right: none;
 	color: white;
 	background: #3ABF70;
 	font-family: Source Sans Pro;
 	font-size: 18px;
-	height: 40px;
+	height: 50px;
 }
 
 #modal-submit {
 	width: 437px;
-	height: 50px;
+	height: 60px;
 	font-size: 20px;
-	margin: 132px 9px 0 0;
+	padding-top: 20px;
+	margin: 432px 9px 0 0;
 	background: #3ABF70;
 	color: white;
 	font-family: Source Sans Pro;
@@ -395,6 +542,47 @@ nav.scrolled > ul > li {
 	background: black;
 	color: #3ABF70;
 }
+
+/*.reveal-modal {
+	width: 500px;
+	height: 225px;
+}*/
+
+#modal-input {
+	border: 2px solid #3ABF70;
+	border-left: none;
+	height: 40px;
+}
+
+/*#modal-label {
+	border: 2px solid #3ABF70;
+	border-right: none;
+	color: white;
+	background: #3ABF70;
+	font-family: Source Sans Pro;
+	font-size: 18px;
+	height: 40px;
+}*/
+
+/*#modal-submit {
+	width: 437px;
+	height: 50px;
+	font-size: 20px;
+	margin: 132px 9px 0 0;
+	background: #3ABF70;
+	color: white;
+	font-family: Source Sans Pro;
+	-webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}*/
+
+/*#modal-submit:hover {
+	background: black;
+	color: #3ABF70;
+}*/
 
 .clients-section {
 	height: 700px;
@@ -647,6 +835,52 @@ nav.scrolled > ul > li {
 	background-image: url('../icons/fi-page-export.svg');
 }
 
+footer > h2 {
+	font-family: Source Sans Pro;
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer > h2 > a {
+	color: #3ABF70;
+}
+
+footer {
+	background: linear-gradient(180deg, #ffffff, #f2f2f2);
+}
+
+.twitter-icon {
+	height: 70px;
+	width: 70px;
+	margin: 0 auto;
+	background-image: url('../img/fi-social-twitter.svg');
+	background-size: cover;
+}
+
+.tweet {
+	margin: 0 auto;
+	padding-top: 20px;
+	height: 150px;
+	width: 500px;
+	font-family: Source Sans Pro;
+	font-size: 20px;
+	color: #3ABF70;
+	text-align: center;
+}
+
+.footer-info {
+	height: 50px;
+	width: 100%;
+	background-color: black;
+	padding-top: 10px;
+}
+
+.footer-info > p {
+	color: #3ABF70;
+	font-family: Source Sans Pro;
+	text-align: center;
+	margin-bottom: -10px;
+}
 
 
 

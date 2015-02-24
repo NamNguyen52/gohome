@@ -7,6 +7,7 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app2.css" />
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/vendor/modernizr.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
   </head>
@@ -16,9 +17,10 @@
       <nav>
         <div class="logo"></div>
         <ul>
-          <li>About</li>
-          <li>Product</li>
-          <li>Contact</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#features">Features</a></li>
         </ul>
       </nav>
       <header id="hero-header">
@@ -44,6 +46,7 @@
       </div>
     </div>
   </div>
+  <div id="about"></div>
   <div class="product-summary">
     <div class="product-overview">
       <header>
@@ -51,11 +54,15 @@
       </header>
       <p>Reach and delight guests instantly.</p>
     </div>
+    <div id="product"></div>
   </div>
   <div class="product-section">
     <div class="sell-point-container" id="sell-container">
       <div class="iphone-image"></div>
       <div class="iphone-gomoment-image"></div>
+      <div class="iphone-gomoment-demo-overlay" data-reveal-id="myModal1">
+        <p id="demo-overlay-1">Request A Demo</p>
+      </div>
       <div class="sell-point" id="sell-point-1">
         <header>
           <h2>Communicate Simply</h2>
@@ -67,13 +74,21 @@
       <a href="#" data-reveal-id="myModal1">Request A Demo</a>
     </div>
     <div id="myModal1" class="reveal-modal" data-reveal>
+      <div class="modal-selling-points">
+        <h1>Ready to increase RevPAR on autopilot?</h1>
+        <ul>
+          <li>Increase guest loyalty</li>
+          <li>Improve guest satisfaction</li>
+          <li>Beat the competition on TripAdvisor</li>
+        </ul>
+      </div>
       <form id="form2">
         <div class="row collapse">
           <div class="small-3 large-2 columns">
             <span id="modal-label" class="prefix">Name</span>
           </div>
           <div class="small-9 large-10 columns">
-            <input type="text" id="modal-input" placeholder="Enter your full name...">
+            <input type="text" id="name1" placeholder="Enter your full name...">
           </div>
         </div>
         <div class="row collapse">
@@ -81,10 +96,11 @@
             <span id="modal-label" class="prefix">Email</span>
           </div>
           <div class="small-9 large-10 columns">
-            <input type="text" id="modal-input" placeholder="Enter your email...">
+            <input type="text" id="email1" placeholder="Enter your email...">
           </div>
         </div>
-        <a href="#" class="button expand close-reveal-modal" id="modal-submit">Submit</a>
+        <a onClick="prepInfo1()" href="#" class="button expand close-reveal-modal" id="modal-submit">Request Demo</a>
+        <a class="close-reveal-modal">&#215;</a>
       </form>
     </div>
   </div>
@@ -98,18 +114,29 @@
         </header>
         <p id="sell-point-p-2">Automated guest service personalization, improve your guest experience, and unlock new revenue.</p>
       </div>
+      <div class="imac-gomoment-demo-overlay" data-reveal-id="myModal2">
+        <p>Request A Demo</p>
+      </div>
     </div>
     <div class="learn-more" id="learn-more-2">
         <a href="#" data-reveal-id="myModal2">Request A Demo</a>
     </div>
     <div id="myModal2" class="reveal-modal" data-reveal>
+      <div class="modal-selling-points">
+        <h1>Ready to increase RevPAR on autopilot?</h1>
+        <ul>
+          <li>Increase guest loyalty</li>
+          <li>Improve guest satisfaction</li>
+          <li>Beat the competition on TripAdvisor</li>
+        </ul>
+      </div>
       <form id="form2">
         <div class="row collapse">
           <div class="small-3 large-2 columns">
             <span id="modal-label" class="prefix">Name</span>
           </div>
           <div class="small-9 large-10 columns">
-            <input type="text" id="modal-input" placeholder="Enter your full name...">
+            <input type="text" id="name2" placeholder="Enter your full name...">
           </div>
         </div>
         <div class="row collapse">
@@ -117,13 +144,15 @@
             <span id="modal-label" class="prefix">Email</span>
           </div>
           <div class="small-9 large-10 columns">
-            <input type="text" id="modal-input" placeholder="Enter your email...">
+            <input type="text" id="email2" placeholder="Enter your email...">
           </div>
         </div>
-        <a href="#" class="button expand close-reveal-modal" id="modal-submit">Submit</a>
+        <a onClick="prepInfo2()" href="#" class="button expand close-reveal-modal" id="modal-submit">Request Demo</a>
+        <a class="close-reveal-modal">&#215;</a>
       </form>
     </div>
   </div>
+  <div id="clients"></div>
   <div class="clients-section">
     <header>
       <h2>Trusted by leading hotels & brands</h2>
@@ -145,6 +174,7 @@
       </ul>
     </div>  
   </div>
+  <div id="features"></div>
   <div class="product-section">
     <header class="product-feature-header">
       <h2>Product Features</h2>
@@ -206,21 +236,83 @@
   </div>
 
   <footer>
-    
+     <h2><a href="https://twitter.com/gomoment" target="_blank">@GoMoment</a></h2>
+    <div class="twitter-icon"></div>
+    <ul class="example-orbit" data-orbit>
+      <li>
+        <div class="tweet" id="recent-tweet1"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet2"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet3"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet4"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet5"></div>
+      </li>
+    </ul>
+    <div class="footer-info">
+      <p>2015 Go Moment | Unforgettable Experiences</p>
+    </div> 
   </footer>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/easing.js"></script>
+    <script src="js/viewportchecker.js"></script>
+    <script src="js/codebird.js"></script>
     <script>
-      $(document).foundation();
+      $(document).foundation({
+        orbit: {
+          bullets: false,
+          timer_speed: 7000,
+          slide_number: false,
+          pause_on_hover: false,
+          navigation_arrows: false,
+          resume_on_mouseout: true,
+          timer: true
+        }
+      });
+
+      $(document).ready(function(){
+        var cb = new Codebird;
+          cb.setConsumerKey(
+              "c24MYuRlBhQDtvtLeV29SIsg6", 
+              "GHw4g6Jtoir3LFXXjexTReMZGfvGhIvQ7Wkr6OYaJao09pay5X"
+            );
+          cb.setToken(
+            "46941458-cisCoyQUA7ZVjONfoXIJrphUAYSmVQtBlMtsbWlRt", 
+            "4g7PmoBi7SIqM5bImGbyCK6qTwtYA6Q89r6qxCZ4EHN13"
+            );
+
+        var params = {
+          screen_name: "GoMoment"
+        };
+
+        cb.__call(
+          "statuses_userTimeline",
+          params,
+          function (reply) {
+              console.log(reply);
+              var tweetDiv1 = document.getElementById('recent-tweet1');
+              var tweetDiv2 = document.getElementById('recent-tweet2');
+              var tweetDiv3 = document.getElementById('recent-tweet3');
+              var tweetDiv4 = document.getElementById('recent-tweet4');
+              var tweetDiv5 = document.getElementById('recent-tweet5');
+              tweetDiv1.innerHTML = reply[0].text;
+              tweetDiv2.innerHTML = reply[1].text;
+              tweetDiv3.innerHTML = reply[2].text;
+              tweetDiv4.innerHTML = reply[3].text;
+              tweetDiv5.innerHTML = reply[4].text;
+          }
+        );
+      });
     </script>
   </body>
 </html>
 
-<!-- Automated Communication
-Request Tracking
-Rich Guest Data
-Real Time Feedback
-Dashboard Analytics -->
 

@@ -10,12 +10,16 @@ $(document).scroll(function(){
 });
 
 $(document).ready(function(){
-
-	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 700, 'easeOutExpo');
+	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 700);
 
 	setTimeout(function() {
-      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 700, 'easeOutExpo');
-	}, 1300);
+      $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 500);
+	}, 1700);
+
+  $('.sell-point-container').addClass('hidden').viewportChecker({
+    classToAdd: 'visible animated fadeInLeft',
+    offset: 100
+  });
 });
 
 $(".feature-container").hover(function(){
@@ -23,33 +27,60 @@ $(".feature-container").hover(function(){
 	$(this).children("div.feature-description").toggleClass("hovered");
 });
 
-$(window).scroll(function(){
+var error = function (err, response, body) {
+    console.log('ERROR [%s]', err);
+};
+var success = function (data) {
+    console.log('Data [%s]', data);
+};
 
-	var iphoneImageHeight = $('.iphone-image').height();
-	var windowHeight = $(window).height();
-	var heightThreshhold = 350;
-	var heightDiff = (windowHeight - iphoneImageHeight) + heightThreshhold;
-
-	if ($(window).scrollTop() >= heightDiff) {
-		$('.iphone-image').animate({'opacity':'1', 'margin-left':'-50px'},600, 'easeOutExpo');
-		$('.iphone-gomoment-image').animate({'opacity':'1', 'margin-left':'20px'},600, 'easeOutExpo');
-		$('#sell-point-1').animate({'opacity':'1','margin-top':'-350px'},600, 'easeOutExpo');
-	}
-
-});
-
-$(window).scroll(function(){
-
-	var imacImageHeight = $('.imac-image').height();
-	var windowHeight = $(window).height();
-	var heightThreshhold = 850;
-	var heightDiff = (windowHeight - imacImageHeight) + heightThreshhold;
-
-	if ($(window).scrollTop() >= heightDiff) {
-		$('.imac-image').animate({'opacity':'1','margin-left':'20px'}, 600, 'easeOutExpo');
-		$('.imac-gomoment-image').animate({'opacity':'1','margin-left':'43px'}, 600, 'easeOutExpo');
-		$('#sell-point-2').animate({'opacity':'1', 'margin-top':'-250px'}, 600, 'easeOutExpo');
-	}
+$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+ 
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 1000, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+ 
+  // use the first element that is "scrollable"
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+ 
 });
 
 function testGo() {
