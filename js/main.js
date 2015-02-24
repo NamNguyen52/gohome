@@ -85,21 +85,51 @@ $(document).ready(function() {
 
 function testGo() {
 	var guestNumber = document.getElementById('test-go-moment-input').value;
-	var hotelId = 100;
 	$.ajax({
 		method: 'POST',
-		url: 'http://rev1.gomoment.com/app/guests',
-		data: JSON.stringify({
-			'mobile_number': guestNumber,
-			'hotel_id':'100',
-			'guest_name':'test guest'
-		}),
+		url: 'http://revone-staging.herokuapp.com/app/guests',
+		data: "guest[mobile_number]=" + guestNumber + "&guest[name]=test&visit[hotel_id]=2",
 		success: function() {
 			console.log('success');
+      document.getElementById('test-go-moment-input').value="Thank You!"
 		},
 		failure: function() {
 			console.log('fail');
 		}
 	});
 }
+
+ $(document).ready(function(){
+  var cb = new Codebird;
+    cb.setConsumerKey(
+        "c24MYuRlBhQDtvtLeV29SIsg6", 
+        "GHw4g6Jtoir3LFXXjexTReMZGfvGhIvQ7Wkr6OYaJao09pay5X"
+      );
+    cb.setToken(
+      "46941458-cisCoyQUA7ZVjONfoXIJrphUAYSmVQtBlMtsbWlRt", 
+      "4g7PmoBi7SIqM5bImGbyCK6qTwtYA6Q89r6qxCZ4EHN13"
+      );
+
+  var params = {
+    screen_name: "GoMoment"
+  };
+
+  cb.__call(
+    "statuses_userTimeline",
+    params,
+    function (reply) {
+        console.log(reply);
+        var tweetDiv1 = document.getElementById('recent-tweet1');
+        var tweetDiv2 = document.getElementById('recent-tweet2');
+        var tweetDiv3 = document.getElementById('recent-tweet3');
+        var tweetDiv4 = document.getElementById('recent-tweet4');
+        var tweetDiv5 = document.getElementById('recent-tweet5'); 
+        tweetDiv1.innerHTML = reply[0].text;
+        tweetDiv2.innerHTML = reply[1].text;
+        tweetDiv3.innerHTML = reply[2].text;
+        tweetDiv4.innerHTML = reply[3].text;
+        tweetDiv5.innerHTML = reply[4].text;
+    }
+  );
+});
 
