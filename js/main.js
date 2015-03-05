@@ -1,3 +1,4 @@
+// nav scroll fadein/fadeout 
 $(document).scroll(function(){
     var y = $(this).scrollTop();
 
@@ -9,6 +10,7 @@ $(document).scroll(function(){
 
 });
 
+// hero, product images, and product feature animations
 $(document).ready(function(){
 	$('#hero-header').animate({'opacity':'1', 'margin-top':'150px'}, 700);
 
@@ -16,23 +18,16 @@ $(document).ready(function(){
       $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 500);
 	}, 1700);
 
-  $('.sell-point-container').addClass('hidden').viewportChecker({
-    classToAdd: 'visible animated fadeInLeft',
-    offset: 100
-  });
+  // $('.sell-point-container').addClass('hidden').viewportChecker({
+  //   classToAdd: 'visible animated fadeInLeft',
+  //   offset: 100
+  // });
 });
 
 $(".feature-container").hover(function(){
 
 	$(this).children("div.feature-description").toggleClass("hovered");
 });
-
-var error = function (err, response, body) {
-    console.log('ERROR [%s]', err);
-};
-var success = function (data) {
-    console.log('Data [%s]', data);
-};
 
 $(document).ready(function() {
   function filterPath(string) {
@@ -62,7 +57,6 @@ $(document).ready(function() {
     }
   });
  
-  // use the first element that is "scrollable"
   function scrollableElement(els) {
     for (var i = 0, argLength = arguments.length; i <argLength; i++) {
       var el = arguments[i],
@@ -80,7 +74,6 @@ $(document).ready(function() {
     }
     return [];
   }
- 
 });
 
 function testGo() {

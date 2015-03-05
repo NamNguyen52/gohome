@@ -192,7 +192,7 @@ nav.scrolled > ul > li > a {
 	width: 800px;
 	text-align: center;
 	position: relative;
-	margin: 120px auto 0 auto;
+	margin: 100px auto 30px auto;
 }
 
 .product-overview > header > h2 {
@@ -230,7 +230,7 @@ nav.scrolled > ul > li > a {
 }
 
 #sell-container {
-	margin-top: 50px;
+	margin-top: 100px;
 	padding-left: 150px;
 }
 
@@ -301,6 +301,10 @@ nav.scrolled > ul > li > a {
 
 .iphone-gomoment-demo-overlay:hover {
 	background-color: rgba(0,0,0,0.7);
+}
+
+#product-section-2 {
+	height: 625px;
 }
 
 .imac-image {
@@ -430,7 +434,7 @@ nav.scrolled > ul > li > a {
 
 #learn-more-2 {
 	position: relative;
-	margin-top: -86px;
+	margin-top: 55px;
 	padding-top: 25px;
 	background-color: #3ABF70;
 	width: 100%;
@@ -594,7 +598,7 @@ nav.scrolled > ul > li > a {
 }*/
 
 .clients-section {
-	height: 700px;
+	height: 650px;
 	width: 100%;
 	background: linear-gradient(180deg, #ffffff, #f2f2f2);
 }
@@ -842,6 +846,52 @@ nav.scrolled > ul > li > a {
 
 #reports {
 	background-image: url('../icons/fi-page-export.svg');
+}
+
+.email-section {
+	height: 250px;
+	width: 100%;
+	background-image: url('../img/footer_lodyas.png'); 
+	background-attachment: fixed;
+	padding-top: 40px;
+}
+
+.email-section-container {
+	width: 950px;
+	height: 150px;
+	/*border: 1px solid white;*/
+	margin: 0 auto;
+	padding-top: 45px; 
+}
+
+.email-section-container > h3 {
+	font-family: Source Sans Pro;
+	color: white;
+	font-size: 25px;
+	float: left;
+	margin-top: 8px;
+}
+
+#email-section-input {
+	width: 480px;
+	float: right;
+}
+
+#email-input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	box-shadow: none;
+	color:  #3ABF70;
+	font-family: Source Sans Pro;
+	font-size: 25px;
+}
+
+#email-submit-button {
+	background-color: transparent;
+	border: 2px solid white;
+	font-family: Source Sans Pro;
+	font-size: 20px;
 }
 
 footer > h2 {
