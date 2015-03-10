@@ -260,7 +260,7 @@ nav.scrolled > ul > li > a {
 	height: 402px;
 	width: 225px;
 	margin: -521px 0 0 20px;
-	background-image: url('../img/gochat.png');
+	background-image: url('../img/gochat.gif');
 	background-size: contain;
 	opacity: 1;
 }
@@ -367,7 +367,7 @@ nav.scrolled > ul > li > a {
 
 
 #imac-gomoment-image-2 {
-	background-image: url('../img/dash2.png');
+	background-image: url('../img/dash3.png');
 }
 
 .sell-point {
@@ -851,25 +851,26 @@ nav.scrolled > ul > li > a {
 .email-section {
 	height: 250px;
 	width: 100%;
-	background-image: url('../img/footer_lodyas.png'); 
-	background-attachment: fixed;
-	padding-top: 40px;
+	background-color: white;
+	background-position: 50% 50%;
+	padding-top: 50px;
 }
 
 .email-section-container {
-	width: 950px;
+	width: 980px;
 	height: 150px;
-	/*border: 1px solid white;*/
+	/*border: 1px solid black;*/
 	margin: 0 auto;
-	padding-top: 45px; 
+	padding-top: 55px;
+	padding-right: 10px;
+	padding-left: 23px;
 }
 
 .email-section-container > h3 {
 	font-family: Source Sans Pro;
-	color: white;
+	color: #3ABF70;
 	font-size: 25px;
 	float: left;
-	margin-top: 8px;
 }
 
 #email-section-input {
@@ -880,18 +881,29 @@ nav.scrolled > ul > li > a {
 #email-input {
 	background-color: transparent;
 	border: none;
-	border-bottom: 2px solid white;
+	border: 3px solid #3ABF70;
+	border-right: none; 
 	box-shadow: none;
 	color:  #3ABF70;
 	font-family: Source Sans Pro;
 	font-size: 25px;
+	margin-top: -4px;
+	height: 50px;
 }
 
 #email-submit-button {
-	background-color: transparent;
-	border: 2px solid white;
+	background-color: #3ABF70;
+	border: 3px solid #3ABF70;
 	font-family: Source Sans Pro;
 	font-size: 20px;
+	margin-left: -10px;
+	margin-top: -4px;
+	height: 50px;
+	padding-top: 3px;
+}
+
+#email-submit-button:hover {
+	color: black;
 }
 
 footer > h2 {
