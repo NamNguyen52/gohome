@@ -26,23 +26,44 @@ $(document).ready(function(){
 
 $("#test-go-moment-submit").click(function(){
 
-  setTimeout(function(){
-    $('.test-confirmation-container').toggleClass('clicked');
-  },200);
-  $('.call-to-action').toggleClass('clicked');
-  $('#test-go-moment').animate({'margin-left':'-400px'}, 200);
+  if ($('#test-go-moment-input').val() != "") {
+
+    setTimeout(function(){
+      $('.test-confirmation-container').toggleClass('clicked');
+    },200);
+    $('.call-to-action').toggleClass('clicked');
+    $('#test-go-moment').animate({'margin-left':'-400px'}, 200);
+
+  } else {
+
+    var inputBox = document.getElementById('test-go-moment-input');
+    inputBox.placeholder = "Please enter number!";
+    inputBox.style.borderColor = 'red';
+
+  }
 
 });
 
 $("#email-submit-button").click(function(){
 
-  $('#email-input').animate({'margin-left':'-1000px'}, 200);
-  $('#email-submit-button').animate({'margin-left':'-1200px'}, 200);
-  $('#email-call-action').animate({'margin-left':'-1000px'}, 200);
+  if ($('#email-input').val() != "") {
 
-  setTimeout(function(){
-    $('.email-confirmation-container').toggleClass('clicked');
-  }, 300);
+    $('#email-input').animate({'margin-left':'-1000px'}, 200);
+    $('#email-submit-button').animate({'margin-left':'-1200px'}, 200);
+    $('#email-call-action').animate({'margin-left':'-1000px'}, 200);
+
+    setTimeout(function(){
+      $('.email-confirmation-container').toggleClass('clicked');
+    }, 300);
+
+  } else {
+
+    var emailInput = document.getElementById('email-input');
+    emailInput.placeholder = "Please enter email!";
+    emailInput.style.borderColor = "red";
+
+  }
+
 });
 
 $(".feature-container").hover(function(){
