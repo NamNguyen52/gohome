@@ -32,7 +32,7 @@ $("#test-go-moment-submit").click(function(){
   } else {
 
     var inputBox = document.getElementById('test-go-moment-input');
-    inputBox.placeholder = "Please enter number!";
+    inputBox.placeholder = "Please enter cell number!";
     inputBox.style.borderColor = 'red';
 
   }

@@ -1085,6 +1085,10 @@ footer {
 		margin-left: 10px;
 	}
 
+	#test-go-moment-input {
+		font-size: 16px;	
+	}
+
 	.call-to-action {
 		width: 350px;
 		margin: 10px auto 0 auto;
@@ -1268,7 +1272,7 @@ footer {
 	}
 
 	.footer-links {
-		margin: 25px 0 0 40px;
+		margin: 25px 0 0 70px;
 	}
 
 	.footer-links > li {
