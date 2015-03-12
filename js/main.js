@@ -17,11 +17,6 @@ $(document).ready(function(){
 	setTimeout(function() {
       $('.test-go-moment-container').animate({'opacity':'1', 'margin-top':'65px'}, 500);
 	}, 1700);
-
-  // $('.sell-point-container').addClass('hidden').viewportChecker({
-  //   classToAdd: 'visible animated fadeInLeft',
-  //   offset: 100
-  // });
 });
 
 $("#test-go-moment-submit").click(function(){

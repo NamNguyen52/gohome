@@ -925,9 +925,7 @@ nav.scrolled > ul > li > a {
 
 #email-input {
 	background-color: transparent;
-	border: none;
-	border: 3px solid #3ABF70;
-	border-right: none; 
+	border: 3px solid #3ABF70; 
 	box-shadow: none;
 	color:  #3ABF70;
 	font-family: Source Sans Pro;
@@ -941,7 +939,7 @@ nav.scrolled > ul > li > a {
 	border: 3px solid #3ABF70;
 	font-family: Source Sans Pro;
 	font-size: 20px;
-	margin-left: -10px;
+	margin-left: -1px;
 	margin-top: -5px;
 	height: 50px;
 	padding-top: 3px;
@@ -1230,6 +1228,10 @@ footer {
 	#email-section-input {
 		width: 350px;
 		float: right;
+	}
+
+	#email-submit-button {
+		padding-right: 10px;
 	}
 
 	.email-confirmation-container {
