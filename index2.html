@@ -1,0 +1,261 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Moment - Better TripAdvisor Reviews For Hotels</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app3.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <div class="home-page-container">
+    <div class="home-page-image">
+      <nav>
+        <div class="logo"></div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#clients">Clients</a></li>
+        </ul>
+      </nav>
+      <header id="hero-header">
+        <h1>Engage & Serve Guests
+          Automatically</h1>
+      </header>
+      <div class="test-go-moment-container">
+        <div class="call-to-action">
+          <p>See for yourself</p>
+        </div>
+        <div class="row" id="test-go-moment">
+          <div class="large-12 columns">
+            <div class="row collapse">
+              <div class="small-9 columns">
+                <input type="text" id="test-go-moment-input" placeholder="555-555-5555" />
+              </div>
+              <div class="small-3 columns">
+                <span class="postfix" id="test-go-moment-submit" onclick=testGo()><a href="#">Text Me</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test-confirmation-container">
+          <p>Thank you. Check your cell phone!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="about"></div>
+  <div class="product-summary">
+    <div class="product-overview">
+      <header>
+        <h2>Increase Guest Loyalty On Autopilot</h2>
+      </header>
+      <p>Delight guests with instant service without tying up your staff</p>
+    </div>
+      <a href="#" data-reveal-id="myModal1" >
+        <div class="learn-more" id="learn-more-1">Request A Demo
+        </div>
+      </a>
+    <div id="myModal1" class="reveal-modal" data-reveal>
+      <div class="modal-selling-points">
+        <h1>Ready to increase guest loyalty on autopilot?</h1>
+        <ul>
+          <li>Increase RevPAR</li>
+          <li>Improve guest satisfaction</li>
+          <li>Beat the competition on TripAdvisor</li>
+        </ul>
+      </div>
+      <form id="form2">
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span id="modal-label" class="prefix">Name</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" id="name1" placeholder="Full name...">
+          </div>
+        </div>
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span id="modal-label" class="prefix">Email</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" id="email1" placeholder="Your email...">
+          </div>
+        </div>
+        <a onClick="prepInfo1()" href="#" class="button expand close-reveal-modal" id="modal-submit">Request Demo</a>
+        <a class="close-reveal-modal">&#215;</a>
+      </form>
+    </div>
+    <div id="product"></div>
+  </div>
+  <div class="product-section">
+    <div class="sell-point-container" id="sell-container">
+      <div class="iphone-image"></div>
+      <div class="iphone-gomoment-image"></div>
+      <div class="iphone-gomoment-demo-overlay" data-reveal-id="myModal1">
+        <a href="#">
+          <p id="demo-overlay-1">Request A Demo</p>
+        </a>
+      </div>
+      <div class="sell-point" id="sell-point-1">
+        <header>
+          <h2>Communicate Simply</h2>
+        </header>
+        <p>"Guests would rather text us than <br/>download yet another app."<br/>- Area Front Desk Manager</p>
+      </div>
+    </div>
+  </div>
+  <div class="product-section" id="product-section-2">
+    <div class="sell-point-container">
+      <div class="imac-image"></div>
+      <div class="imac-gomoment-image" id="imac-gomoment-image-2"></div>
+      <div class="sell-point" id="sell-point-2">
+        <header>
+          <h2>Drive Results with Go Moment</h2>
+        </header>
+        <p id="sell-point-p-2">Track your guest experience. <br /> Unlock new revenue.</p>
+      </div>
+      <div class="imac-gomoment-demo-overlay" data-reveal-id="myModal2">
+        <a href="#">
+          <p>Request A Demo</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="clients"></div>
+  <div class="clients-section">
+    <header>
+      <h2>Trusted by leading hotels & brands</h2>
+    </header>
+    <div class="logo-container">
+      <ul>
+        <li id="line-size"></li>
+        <li id="sheraton-size"></li>
+        <li id="fairfield-size"></li>
+        <li id="best-west-size"></li>
+        <li id="wyndham-size"></li>
+      </ul>
+      <ul id="logo-second-row">
+        <li id="crowne-size"></li>
+        <li id="hilton-size"></li>
+        <li id="embassy-size"></li>
+        <li id="double-tree-size"></li>
+        <li id="hampton-size"></li>
+      </ul>
+    </div>
+    <div id="myModal2" class="reveal-modal" data-reveal>
+      <div class="modal-selling-points">
+        <h1>Ready to increase guest loyalty on autopilot?</h1>
+        <ul>
+          <li>Increase RevPAR</li>
+          <li>Improve guest satisfaction</li>
+          <li>Beat the competition on TripAdvisor</li>
+        </ul>
+      </div>
+      <form id="form2">
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span id="modal-label" class="prefix">Name</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" id="name2" placeholder="Enter your full name...">
+          </div>
+        </div>
+        <div class="row collapse">
+          <div class="small-3 large-2 columns">
+            <span id="modal-label" class="prefix">Email</span>
+          </div>
+          <div class="small-9 large-10 columns">
+            <input type="text" id="email2" placeholder="Enter your email...">
+          </div>
+        </div>
+        <a onClick="prepInfo2()" href="#" class="button expand close-reveal-modal" id="modal-submit">Request Demo</a>
+        <a class="close-reveal-modal">&#215;</a>
+      </form>
+    </div>
+  </div>
+  <div class="email-section">
+    <div class="email-section-container">
+      <h3 id="email-call-action">Email me a complete list of product features:</h3>
+      <div class="row" id="email-section-input">
+        <div class="large-12 columns">
+          <div class="row collapse">
+            <div class="small-10 columns">
+              <input type="text" id="email-input" placeholder="email@example.com">
+            </div>
+            <div class="small-2 columns" id="email-submit-text">
+              <a href="#nogo" id="email-submit-button"class="button postfix">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="email-confirmation-container">
+        <p>The keys to building guest loyalty will soon be in your inbox.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+     <h2><a href="https://twitter.com/gomoment" target="_blank">@GoMoment</a></h2>
+    <div class="twitter-icon"></div>
+    <ul class="example-orbit" data-orbit>
+      <li>
+        <div class="tweet" id="recent-tweet1"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet2"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet3"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet4"></div>
+      </li>
+      <li>
+        <div class="tweet" id="recent-tweet5"></div>
+      </li>
+    </ul>
+    <div class="footer-info">
+      <p>©2015 Go Moment | Unforgettable Experiences</p>
+      <ul class="footer-links">
+        <li>
+          <a target="_blank" href="http://www.gomoment.com/contact/">Contact Us</a>
+        </li>
+        <li><a target="_blank" href="http://www.gomoment.com/about/">About Us</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.gomoment.com/privacy/">Privacy</a>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.gomoment.com/terms/">Terms</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://jobs-gomoment.icims.com/jobs/intro">Careers</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/viewportchecker.js"></script>
+    <script src="js/codebird.js"></script>
+    <script>
+      $(document).foundation({
+        orbit: {
+          bullets: false,
+          timer_speed: 7000,
+          slide_number: false,
+          pause_on_hover: false,
+          navigation_arrows: false,
+          resume_on_mouseout: true,
+          timer: true
+        }
+      });
+    </script>
+  </body>
+</html>
